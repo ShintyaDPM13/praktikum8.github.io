@@ -1,73 +1,52 @@
-.profile-card {
-  display: flex;
-  flex-direction: column;
-  width: 300px; /* Sesuaikan lebar sesuai kebutuhan */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-family: sans-serif;
+body {
+    font-family: 'Trebuchet MS', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    }
+header {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.profile-image {
-  width: 100%;
-  height: auto; /* Biarkan tinggi menyesuaikan aspek rasio gambar */
+nav {
+    background-color: #3b74c5;
+    text-align: center;
+    padding: 1em 0;
 }
-
-.profile-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover; /* Memastikan gambar mengisi area tanpa distorsi */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
 }
-
-.profile-info {
-  padding: 15px;
-  text-align: left;
+nav a:hover {
+    text-decoration: underline;
 }
-
-.name {
-  margin-top: 0;
-  margin-bottom: 5px;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #333;
+section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
-
-.location, .username, .email {
-  margin-bottom: 5px;
-  color: #555;
-  font-size: 0.9em;
+section h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
 }
-
-.profile-description {
-  padding: 15px;
-  background-color: #f9f9f9;
-  font-size: 0.95em;
-  color: #666;
+ul {
+    padding-left: 20px;
 }
-
-/* Styling untuk ikon (opsional, perlu library ikon seperti Font Awesome) */
-.location::before {
-  content: "\f041"; /* Contoh ikon lokasi dari Font Awesome */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 5px;
-  color: #777;
-}
-
-.username::before {
-  content: "\f2c0"; /* Contoh ikon pengguna dari Font Awesome */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 5px;
-  color: #777;
-}
-
-.email::before {
-  content: "\f0e0"; /* Contoh ikon email dari Font Awesome */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 5px;
-  color: #777;
+footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 3em;
+    font-size: 0.9em;
 }
